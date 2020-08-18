@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,11 +56,28 @@
                     </navigationItem>
                     <connections>
                         <outlet property="athleteTableview" destination="pVD-jP-ZDr" id="mG1-2o-kGr"/>
+                        <segue destination="Xf8-aN-His" kind="show" id="c5D-Og-nMJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwN-jq-TZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955" y="-177"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lNb-AK-rKA">
+            <objects>
+                <viewController id="Xf8-aN-His" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tLg-HA-t2z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JRC-xn-qkY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hdu-7h-JTL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jtL-fP-MhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="-177"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hYO-tV-zwR">
