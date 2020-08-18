@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		B7AE798A24EB811E000C69FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE798924EB811E000C69FC /* AppDelegate.swift */; };
 		B7AE798C24EB811E000C69FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE798B24EB811E000C69FC /* SceneDelegate.swift */; };
-		B7AE798E24EB811E000C69FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE798D24EB811E000C69FC /* ViewController.swift */; };
 		B7AE799124EB811E000C69FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE798F24EB811E000C69FC /* Main.storyboard */; };
 		B7AE799324EB8120000C69FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AE799224EB8120000C69FC /* Assets.xcassets */; };
 		B7AE799624EB8120000C69FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE799424EB8120000C69FC /* LaunchScreen.storyboard */; };
+		B7AE79A124EB83C7000C69FC /* AthleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE79A024EB83C7000C69FC /* AthleteModel.swift */; };
+		B7AE79A324EB8461000C69FC /* AthleteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE79A224EB8461000C69FC /* AthleteData.swift */; };
+		B7AE79A824EB863A000C69FC /* AthleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE79A724EB863A000C69FC /* AthleteVC.swift */; };
+		B7AE79AB24EB8A6A000C69FC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE79AA24EB8A6A000C69FC /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7AE798624EB811E000C69FC /* AthleteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AthleteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AE798924EB811E000C69FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7AE798B24EB811E000C69FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7AE798D24EB811E000C69FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B7AE799024EB811E000C69FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7AE799224EB8120000C69FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7AE799524EB8120000C69FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AE799724EB8120000C69FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7AE79A024EB83C7000C69FC /* AthleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteModel.swift; sourceTree = "<group>"; };
+		B7AE79A224EB8461000C69FC /* AthleteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteData.swift; sourceTree = "<group>"; };
+		B7AE79A724EB863A000C69FC /* AthleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteVC.swift; sourceTree = "<group>"; };
+		B7AE79AA24EB8A6A000C69FC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,56 @@
 			children = (
 				B7AE798924EB811E000C69FC /* AppDelegate.swift */,
 				B7AE798B24EB811E000C69FC /* SceneDelegate.swift */,
-				B7AE798D24EB811E000C69FC /* ViewController.swift */,
-				B7AE798F24EB811E000C69FC /* Main.storyboard */,
+				B7AE79A924EB8A4D000C69FC /* Extension */,
+				B7AE799F24EB839F000C69FC /* Data */,
+				B7AE799E24EB8379000C69FC /* Model */,
+				B7AE799D24EB828A000C69FC /* View */,
+				B7AE79A424EB85E9000C69FC /* Controller */,
 				B7AE799224EB8120000C69FC /* Assets.xcassets */,
 				B7AE799424EB8120000C69FC /* LaunchScreen.storyboard */,
 				B7AE799724EB8120000C69FC /* Info.plist */,
 			);
 			path = AthleteApp;
+			sourceTree = "<group>";
+		};
+		B7AE799D24EB828A000C69FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE798F24EB811E000C69FC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7AE799E24EB8379000C69FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE79A024EB83C7000C69FC /* AthleteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7AE799F24EB839F000C69FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE79A224EB8461000C69FC /* AthleteData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B7AE79A424EB85E9000C69FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE79A724EB863A000C69FC /* AthleteVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7AE79A924EB8A4D000C69FC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE79AA24EB8A6A000C69FC /* Date+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7AE798E24EB811E000C69FC /* ViewController.swift in Sources */,
+				B7AE79A124EB83C7000C69FC /* AthleteModel.swift in Sources */,
+				B7AE79AB24EB8A6A000C69FC /* Date+Extension.swift in Sources */,
+				B7AE79A324EB8461000C69FC /* AthleteData.swift in Sources */,
+				B7AE79A824EB863A000C69FC /* AthleteVC.swift in Sources */,
 				B7AE798A24EB811E000C69FC /* AppDelegate.swift in Sources */,
 				B7AE798C24EB811E000C69FC /* SceneDelegate.swift in Sources */,
 			);
