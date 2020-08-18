@@ -13,6 +13,8 @@ struct Athlete {
     var lastName: String
     var position: String
     var time: Date
+    var image: String
+    var notes: String
     
     static func getSortedArray() -> [Athlete] {
         return athleteData.sorted { $0.position.lowercased() < $1.position.lowercased() }
