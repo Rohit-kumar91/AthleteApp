@@ -45,7 +45,14 @@
                             <outlet property="delegate" destination="DuO-zo-ibn" id="sce-jz-cux"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Athletes" id="VbV-lC-KWy"/>
+                    <navigationItem key="navigationItem" title="Athletes" id="VbV-lC-KWy">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="line.horizontal.3.decrease.circle" catalog="system" style="plain" id="U1l-cG-dFk">
+                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="btnFilterAction:" destination="DuO-zo-ibn" id="c6H-UX-Fw6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="athleteTableview" destination="pVD-jP-ZDr" id="mG1-2o-kGr"/>
                     </connections>
@@ -73,4 +80,7 @@
             <point key="canvasLocation" x="190" y="-177"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="line.horizontal.3.decrease.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

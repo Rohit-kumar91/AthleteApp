@@ -17,12 +17,15 @@ struct Athlete {
     static func getSortedArray() -> [Athlete] {
         return athleteData.sorted { $0.position.lowercased() < $1.position.lowercased() }
     }
+    
+    static func getSortedDateArray() -> [Athlete] {
+        return athleteData.sorted { $0.time < $1.time }
+    }
+    
+    static func getFilterbyLastname() -> [Athlete] {
+        return athleteData.sorted { $0.time > $1.time }.filter ({$0.lastName.first?.lowercased() == "j"})
+    }
 }
-
-
-
-
-
 
 
 
